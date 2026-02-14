@@ -1,0 +1,64 @@
+/* Estilos específicos para la sección Async/Await */
+
+.async-section {
+    background-color: #34495e;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.async-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.async-section p {
+    color: #bdc3c7;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-calc {
+    background-color: #9b59b6;
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    flex: 1;
+}
+
+.btn-calc:hover {
+    background-color: #8e44ad;
+}
+
+.btn-clear-async {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    flex: 1;
+}
+
+.btn-clear-async:hover {
+    background-color: #5a6268;
+}
+
+/* Animación de carga para el spinner */
+.spinner-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

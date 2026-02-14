@@ -1,0 +1,230 @@
+/* Destructuring Objects - Estilos específicos */
+
+/* Sección de contenido principal */
+.seccion-contenido {
+    min-height: calc(100vh - 140px);
+    padding-bottom: 40px;
+}
+
+/* Header de sección */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Secciones de información */
+.info-section {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h3 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.info-section h4 {
+    color: #764ba2;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.info-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info-section ul li {
+    padding: 8px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.info-section ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Ejemplo de código */
+.code-example {
+    background: #2d3748;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.code-example pre {
+    margin: 0;
+    color: #e2e8f0;
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.code-example code {
+    color: #e2e8f0;
+}
+
+/* Secciones de demo y resultado */
+.demo-section,
+.result-section {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.demo-section h3,
+.result-section h3 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.demo-section .card {
+    border: none;
+    background: #f8f9fa;
+}
+
+.demo-section .card-title {
+    color: #764ba2;
+    font-weight: 600;
+}
+
+.demo-section pre {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+/* Botón de demo */
+.btn-demo {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-demo:hover {
+    background: linear-gradient(135deg, #5a6fd6 0%, #6a4190 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+/* Caja de resultados */
+.result-box {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 25px;
+    min-height: 200px;
+    border-left: 4px solid #667eea;
+}
+
+.result-box .extracted-data {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-box .extracted-data h5 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.result-box .data-item {
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-box .data-item .label {
+    font-weight: 600;
+    color: #764ba2;
+}
+
+.result-box .data-item .value {
+    color: #2d3748;
+    font-weight: 500;
+}
+
+/* Animación de fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Sección de código */
+.code-section {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.code-section h3 {
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .header p {
+        font-size: 1rem;
+    }
+    
+    .info-section,
+    .demo-section,
+    .result-section,
+    .code-section {
+        padding: 20px;
+    }
+}

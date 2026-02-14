@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises - CRUD Datos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <i class="bi bi-code-square"></i> CRUD Datos
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="bi bi-table"></i> CRUD Principal
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../callbacks/callbacks.html">
+                            <i class="bi bi-arrow-repeat"></i> Callbacks
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../promises/promises.html">
+                            <i class="bi bi-hourglass-split"></i> Promises
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../async-await/async-await.html">
+                            <i class="bi bi-lightning-charge"></i> Async/Await
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../destructuring/destructuring.html">
+                            <i class="bi bi-box-arrow-in-down"></i> Destructuring
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Promises -->
+    <div class="seccion-contenido">
+        <div class="header">
+            <div class="container">
+                <h1><i class="bi bi-hourglass-split"></i> Promises</h1>
+                <p>Verificación de vocales utilizando Promises</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="info-section">
+                        <h3>¿Qué son las Promises?</h3>
+                        <p>Las Promises son objetos que representan la eventual finalización de una operación asíncrona.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="promise-section">
+                        <h3>Verificador de Vocales</h3>
+                        <p>Ingresa una cadena y verifica si termina en vocal.</p>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <label for="cadenaPromise" class="form-label">Cadena de Texto</label>
+                                <input type="text" class="form-control" id="cadenaPromise" placeholder="Ej: Hola">
+                            </div>
+                            <div class="col-md-4 d-flex align-items-end gap-2">
+                                <button type="button" class="btn btn-verify" onclick="verificarCadena()">
+                                    <i class="bi bi-check2-circle"></i> Verificar
+                                </button>
+                                <button type="button" class="btn btn-clear-promise" onclick="limpiarPromise()">
+                                    <i class="bi bi-x-circle"></i> Limpiar
+                                </button>
+                            </div>
+                        </div>
+                        <div id="resultadoPromise" class="mt-3" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 2026</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="promises.js"></script>
+</body>
+</html>
